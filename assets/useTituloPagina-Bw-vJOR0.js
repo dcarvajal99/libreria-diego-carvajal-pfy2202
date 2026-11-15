@@ -1,0 +1,1 @@
+import{b as e,y as t}from"./index-DGlli21e.js";var n=e(t(),1);function r(e){(0,n.useEffect)(()=>{document.title=e+` | Librería Página Austral`},[e])}export{r as t};
