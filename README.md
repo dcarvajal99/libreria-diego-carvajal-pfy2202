@@ -229,8 +229,8 @@ npm run deploy     # construye y publica dist/ en la rama gh-pages
 - W3C Nu HTML Checker: 0 errores y 0 advertencias en el DOM publicado en 9 estados: categorías,
   libros de una categoría, categoría vacía, categoría y libro inexistentes, detalle, página no
   encontrada, error 500 y carga en modo lento.
-- Lighthouse sobre el sitio publicado: 100 en accesibilidad, buenas prácticas y SEO en el inicio y en
-  una categoría, en escritorio y teléfono.
+- Lighthouse sobre el sitio publicado: 100 en accesibilidad, buenas prácticas y SEO en el inicio, una
+  categoría y el detalle de un libro, en escritorio y teléfono.
 - Primera carga sin saltos: desplazamiento acumulado de 0 en inicio y categoría, y bajo 0,001 en el
   detalle, en escritorio y teléfono.
 - `npm test`: 31 pruebas de Vitest pasan; ver la matriz de casos. `oxlint` sin avisos y `npm audit`
@@ -240,6 +240,24 @@ npm run deploy     # construye y publica dist/ en la rama gh-pages
   profunda en la primera visita.
 - Recorrido en el navegador de todos los modos del panel: carga, actualizar, error 500 con y sin datos
   anteriores, sin conexión, sin respuesta (8 s), 404 y categoría vacía; sin desborde a 375 px.
+
+## Capturas
+
+Tomadas del sitio publicado, en `capturas/` (escritorio a 1280 px y teléfono a 390 px):
+
+| Archivo | Qué muestra |
+|---|---|
+| `01-categorias.png` | Inicio con las 8 categorías traídas de `GET /api/categorias` |
+| `02-cargando-categorias.png` | Primera visita en modo «Red lenta»: esqueleto, «Cargando categorías…» y barra de actividad |
+| `03-libros-categoria.png` | Libros de Ciencia ficción (ruta dinámica `/categorias/:id`) |
+| `04-detalle-libro.png` | Detalle de Dune (ruta dinámica `/libros/:id`) |
+| `05-actualizando.png` | «Actualizando…» con los libros a la vista mientras llega la respuesta |
+| `06-error-servidor.png` | Error 500 en la primera visita, con «Reintentar» y el panel en «Error del servidor» |
+| `07-error-con-respaldo.png` | Error al actualizar: aviso junto a los últimos datos recibidos |
+| `08-categoria-no-existe.png` | 404 de una categoría, con salida a las categorías y las que sí existen |
+| `09-categoria-vacia.png` | Categoría sin libros: mensaje y enlace, no un error |
+| `10-servidor-sin-respuesta.png` | El servidor no contesta y el cliente se rinde a los 8 segundos |
+| `11-movil-categorias.png`, `12-movil-detalle.png` | Inicio y detalle en el teléfono |
 
 ## Autor
 

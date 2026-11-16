@@ -7,7 +7,7 @@ export const CATEGORIAS = [
     { id: 'ficcion', nombre: 'Ficción', descripcion: 'Novelas latinoamericanas y clásicos contemporáneos.' },
     { id: 'ciencia-ficcion', nombre: 'Ciencia ficción', descripcion: 'Futuros posibles, otros planetas y preguntas sobre la tecnología.' },
     { id: 'fantasia', nombre: 'Fantasía', descripcion: 'Mundos imaginarios, magia y viajes de aventura.' },
-    { id: 'misterio', nombre: 'Misterio y policial', descripcion: 'Detectives, crímenes por resolver y secretos bien guardados.' },
+    { id: 'misterio', nombre: 'Misterio y policial', descripcion: 'Detectives, crímenes y secretos bien guardados.' },
     { id: 'historia', nombre: 'Historia', descripcion: 'Ensayos y testimonios para entender el pasado.' },
     { id: 'poesia', nombre: 'Poesía', descripcion: 'Poetas chilenos que cambiaron la forma de escribir.' },
     { id: 'infantil', nombre: 'Infantil y juvenil', descripcion: 'Lecturas para empezar a leer y para seguir leyendo.' },
