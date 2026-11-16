@@ -1,0 +1,1 @@
+import{b as e,x as t}from"./index-DZ7zHHOm.js";var n=t(e(),1);function r(e){(0,n.useEffect)(()=>{document.title=e+` | Librería Página Austral`},[e])}export{r as t};
